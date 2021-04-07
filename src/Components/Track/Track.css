@@ -1,0 +1,75 @@
+.Track {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+}
+
+.Track-action {
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+}
+
+.Track-action-active {
+  cursor: pointer;
+  transition: color .25s;
+  color: #fff;
+}
+
+.Track-action-inactive {
+  cursor: default;
+  color: rgba(265, 265, 265, .15);
+}
+
+.Track-action-addRemove {
+  font-size: 1.05rem;
+  padding: .29rem .5rem;
+}
+
+.Track-action-preview {
+  font-size: 0.8rem;
+  padding: .5rem;
+  margin-right: 0.2rem;
+}
+
+.Track-action-active:hover {
+  color: rgba(265, 265, 265, .5);
+}
+
+.Track-action-preview:focus {
+  border: 0px;
+}
+
+.Track-action-preview-active {
+  color: #6c41ec;
+  background-color: white;
+  border: 1px;
+  border-radius: 5px;
+}
+
+.Track-action-preview-active:hover {
+  color: #6c41ec;
+}
+
+.Track-information {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.75rem 0rem;
+}
+
+.Track-information h3 {
+  margin-bottom: .22rem;
+}
+
+.Track-information p {
+  font-size: .83rem;
+  font-weight: 300;
+  color: rgba(256, 256, 256, 0.8);
+}
+
+.Track-audio-preview {
+  display: none;
+  visibility: hidden;
+}
